@@ -4,8 +4,7 @@ import Navbar from './components/Navbar/Navbar.jsx';
 const App = () => {
   return (
     <>
-    <div>App</div>
-    <Navbar />
+      <Navbar />
     </>
   )
 }
