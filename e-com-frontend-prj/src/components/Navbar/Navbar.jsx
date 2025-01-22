@@ -74,23 +74,31 @@ function Navbar() {
                   ))}
 
                   <li className="relative cursor-pointer group">
-                    <a href="#" className="flex items-center text-gray-500 font-semibold gap-1 dark:hover:text-white hover:text-black" >Quick Links
-                    <span><FaCaretDown className="hover:rotate-180 duration-300" /></span>
+                    <a
+                      href="#"
+                      className="flex items-center text-gray-500 font-semibold gap-1 dark:hover:text-white hover:text-black"
+                    >
+                      Quick Links
+                      <span>
+                        <FaCaretDown className="hover:rotate-180 duration-300" />
+                      </span>
                     </a>
 
                     <div className="absolute w-[200px] bg-white dark:bg-gray-900 shadow-lg rounded-lg py-4 px-6 space-y-2 hidden group-hover:block">
                       <ul className="space-y-2">
                         {DropDownLinks.map((data, index) => (
                           <li key={index}>
-                            <a className="text-gray-500 hover:text-black dark:hover:text-white duration-200 p-2 hover:bg-primary/60 inline-block w-full rounded-md font-semibold"
-                            href={data.link}>{data.name}</a>
+                            <a
+                              className="text-gray-500 hover:text-black dark:hover:text-white duration-200 p-2 hover:bg-primary/60 inline-block w-full rounded-md font-semibold"
+                              href={data.link}
+                            >
+                              {data.name}
+                            </a>
                           </li>
-                        ) )}
+                        ))}
                       </ul>
                     </div>
-
                   </li>
-
                 </ul>
               </div>
             </div>
@@ -108,11 +116,9 @@ function Navbar() {
                 dark:text-gray-400 "
                 />
               </div>
-              <div className="flex items-center gap-4"> 
+              <div className="flex items-center gap-4">
                 <button className="relative p-3">
-                  <FaCartShopping 
-                  className="text-xl text-gray-600 dark:text-gray-400" 
-                  />
+                  <FaCartShopping className="text-xl text-gray-600 dark:text-gray-400" />
                   <div className="absolute -top-0.5 -right-0.5 bg-primary text-white w-4 h-4 rounded-full flex items-center justify-center">
                     4
                   </div>
